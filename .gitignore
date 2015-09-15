@@ -1,0 +1,9 @@
+#packages
+bower_components
+node_modules
+
+#typings
+typings
+
+#application
+private

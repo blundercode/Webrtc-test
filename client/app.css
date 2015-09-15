@@ -1,0 +1,22 @@
+
+button {
+  display: inline-block;
+  position: center;
+  top: 110px;
+  left: 110px;
+  z-index: 10; 
+}
+
+video {
+  width: 50%;
+  height: 50%;
+  border: 1px solid white;
+  outline: 1px solid #ccc;
+  /*z-index: 5;*/
+  position: center;
+}
+
+
+/*#myvideo {
+  transform: rotateY(-180deg);
+}*/

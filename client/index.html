@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CTU</title>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+   <link rel="stylesheet" href="app.css" type="text/css">
+</head>
+
+<body ng-app="ctu" ng-controller="WebRtcController as model">
+  <h1>Magic Happens Here!</h1>
+  <br/>
+    <md-button class="md-button md-raised" ng-click="joinRoom(model.roomName)">Join a Room</md-button>
+   <!--<button onclick="webcam(event)">Share webcam</button><br/>-->
+   <md-button class="md-button md-raised" onclick="start()">Share Screen</md-button><br/>
+   <input type="text" ng-model="model.roomName">
+  <video id="myvideo" autoplay muted></video>
+  
+  <!-- libraries -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <script src="//cdn.temasys.com.sg/skylink/skylinkjs/0.6.x/skylink.complete.js"></script>
+  <!-- application -->
+  <script src="app.js"></script>
+  <script src="webrtc/webrtc.js"></script>
+</body>
+ 
+</html>
